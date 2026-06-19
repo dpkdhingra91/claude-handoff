@@ -20,6 +20,10 @@ if [ -e "$CLAUDE_DIR/commands/handoff.md" ]; then
   read -rp "  $CLAUDE_DIR/commands/handoff.md exists. Overwrite? [y/N] " ans
   [[ "$ans" =~ ^[Yy]$ ]] || { echo "  skipped"; exit 1; }
 fi
+if [ -e "$CLAUDE_DIR/hooks/handoff-list.sh" ]; then
+  read -rp "  $CLAUDE_DIR/hooks/handoff-list.sh exists. Overwrite? [y/N] " ans
+  [[ "$ans" =~ ^[Yy]$ ]] || { echo "  skipped"; exit 1; }
+fi
 
 cp "$REPO_DIR/commands/handoff.md" "$CLAUDE_DIR/commands/handoff.md"
 cp "$REPO_DIR/hooks/handoff-list.sh" "$CLAUDE_DIR/hooks/handoff-list.sh"
