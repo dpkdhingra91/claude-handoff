@@ -66,8 +66,8 @@ Next day — fresh session starts. The SessionStart hook surfaces:
 
 ```
 Active handoffs (1) in ~/.claude/handoffs/active/:
-  #  status          branch                  goal                                  age
-  1  blocked         feature/payment-retry   Add retry to Stripe webhook handler   18h ago
+  #  status          branch                        goal                                              age
+  1  blocked         feature/payment-retry         Add retry to Stripe webhook handler               18h ago
 ```
 
 You resume:
