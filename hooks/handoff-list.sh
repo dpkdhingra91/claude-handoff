@@ -14,7 +14,7 @@ files=("$HANDOFF_DIR"/*.md)
 [ ${#files[@]} -eq 0 ] && exit 0
 
 python3 - "$HANDOFF_DIR" <<'PYEOF'
-import os, sys, re, json, datetime
+import sys, re, datetime
 from pathlib import Path
 
 d = Path(sys.argv[1])
