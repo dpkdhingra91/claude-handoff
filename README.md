@@ -112,6 +112,15 @@ Should work on macOS and Linux. On Windows, run the hook through WSL.
 
 MIT — see [LICENSE](LICENSE).
 
+## Related projects
+
+Other Claude Code extensions by the same author:
+
+- [claude-pre-commit-stop-hook](https://github.com/dpkdhingra91/claude-pre-commit-stop-hook)
+- [claude-bug-tracker-skill](https://github.com/dpkdhingra91/claude-bug-tracker-skill)
+- [claude-qa-harness-skill](https://github.com/dpkdhingra91/claude-qa-harness-skill)
+- [claude-deployer-agent](https://github.com/dpkdhingra91/claude-deployer-agent)
+
 ## Contributing
 
 Issues and PRs welcome. If you've extended this with sync-to-cloud, multi-user handoffs, or different storage backends, I'd love to see it.
