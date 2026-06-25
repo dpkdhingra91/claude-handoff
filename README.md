@@ -120,6 +120,7 @@ Other Claude Code extensions by the same author:
 - [claude-bug-tracker-skill](https://github.com/dpkdhingra91/claude-bug-tracker-skill)
 - [claude-qa-harness-skill](https://github.com/dpkdhingra91/claude-qa-harness-skill)
 - [claude-deployer-agent](https://github.com/dpkdhingra91/claude-deployer-agent)
+- [claude-mssql-triage-agent](https://github.com/dpkdhingra91/claude-mssql-triage-agent)
 
 ## Contributing
 
