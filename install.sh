@@ -18,11 +18,11 @@ mkdir -p "$CLAUDE_DIR/handoffs/active" "$CLAUDE_DIR/handoffs/archive"
 # Don't overwrite without confirmation
 if [ -e "$CLAUDE_DIR/commands/handoff.md" ]; then
   read -rp "  $CLAUDE_DIR/commands/handoff.md exists. Overwrite? [y/N] " ans
-  [[ "$ans" =~ ^[Yy]$ ]] || { echo "  skipped"; exit 1; }
+  [[ "$ans" =~ ^[Yy]$ ]] || { echo "  skipped"; exit 0; }
 fi
 if [ -e "$CLAUDE_DIR/hooks/handoff-list.sh" ]; then
   read -rp "  $CLAUDE_DIR/hooks/handoff-list.sh exists. Overwrite? [y/N] " ans
-  [[ "$ans" =~ ^[Yy]$ ]] || { echo "  skipped"; exit 1; }
+  [[ "$ans" =~ ^[Yy]$ ]] || { echo "  skipped"; exit 0; }
 fi
 
 cp "$REPO_DIR/commands/handoff.md" "$CLAUDE_DIR/commands/handoff.md"
