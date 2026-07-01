@@ -105,7 +105,7 @@ Show a table of active handoffs.
 
 **Steps:**
 
-1. `ls -1 ~/.claude/handoffs/active/*.md 2>/dev/null` — get the list
+1. `ls -1t ~/.claude/handoffs/active/*.md 2>/dev/null` — get the list (newest first, matching startup hook order)
 2. For each file, parse the YAML frontmatter (Read the file, extract `status`, `branch`, `goal`, `updated`)
 3. Format as a markdown table:
 
